@@ -1,0 +1,41 @@
+.letter {
+  height: 70px;
+  width: 70px;
+  border: 1px solid white;
+  margin: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.contain {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  width: 400px;
+  height: 550px;
+  justify-content: center;
+  padding-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.board > .row {
+  width: 33vw;
+  display: flex;
+}
+
+.gray {
+  border: none;
+  background-color: gray;
+}

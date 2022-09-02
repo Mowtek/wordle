@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  font-family: "Raleway", sans-serif;
+  height: 7vh;
+}
+
+header,
+header > *,
+header > * > * {
+  background-color: black;
+}
+
+header div {
+  width: 33%;
+}
+
+header .title {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+header button {
+  color: white;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+header:nth-child(odd) {
+  display: flex;
+  padding: 20px;
+}
+
+header .settings {
+  display: flex;
+  justify-content: flex-end;
+}
