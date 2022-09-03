@@ -56,7 +56,7 @@ function Board() {
 
   function printKey(e) {
     let key = e.code;
-    if (alpha.includes(key) || alpha.includes(`Key`)) {
+    if (alpha.includes(key)) {
       if (currentGuess.length >= 5) return;
       setCurrentGuess((prev) => {
         return [...prev, key.split("")[3]];
