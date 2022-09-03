@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .board {
@@ -38,4 +39,38 @@
 .gray {
   border: none;
   background-color: gray;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#message {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  text-align: center;
+  padding: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  animation: wiggle;
+  animation-duration: 0.5s;
+  display: none;
 }

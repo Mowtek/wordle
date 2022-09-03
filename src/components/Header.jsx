@@ -1,11 +1,11 @@
 import React from "react";
 import "./header.css";
 
-function Header() {
+function Header({ resetGame }) {
   return (
     <header>
       <div>
-        <button className="btn">
+        <button className="btn" onClick={resetGame}>
           <i className="fa fa-bars fa-2x"></i>
         </button>
       </div>
