@@ -97,7 +97,7 @@ function Board() {
 
   function colorKey(key, color) {
     const div = document.getElementById(key);
-    if (div.classList.includes(color)) return;
+    if (div.classList.contains(color)) return;
     div.classList.add(color);
   }
 
